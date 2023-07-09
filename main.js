@@ -30,17 +30,16 @@
 //             resolve ('Data fetched successfully');
 //             },5000 )})};
 
-const ApiUrl = 'https://opentdb.com/api.php?amount=50';
-async function getData() {
+    const ApiUrl = 'https://opentdb.com/api.php?amount=50';
+    async function getData() {
     const _questions = await fetch(ApiUrl);
     const _data = await _questions.json();
    
-    swal({
-        title:"Ready for the quiz!",
-        icon:'info',
-        button : "Start"
-    })
+    
+    
+    
     name();
+   
     const info = document.querySelector(".title-info");
     const quizArea = document.querySelector(".quiz-area");
     const question = document.querySelector(".quiz-area h1");
@@ -124,5 +123,11 @@ function name() {
       })
       .then((value) => {
         value === null || value === ""? document.querySelector(".title span").innerHTML = "Unknown" : document.querySelector(".title span").innerHTML = value;
-      });
+      }).then((value) => {
+        swal({
+            title:"Ready for the quiz!",
+            icon:'info',
+            button : "Start"
+        }) 
+      })
 }
