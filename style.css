@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #003;
+}
+.container{
+    background-color: #005;
+    margin: auto;
+    padding: 20px;
+}
+.container h3{
+    font-size: 40px;
+    color: white;
+    margin: 20px 0;
+    text-align: center;
+}
+.container .title-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    height: fit-content;
+    margin: 10px auto;
+
+}
+.container .title-info .Yours ,.container .title-info .info{
+    font-size: 30px;
+    color: white;
+}
+.container .title-info .Yours p ,.container .title-info .info p{
+    margin-bottom: 10px;
+}
+.container .title-info .title{
+    font-size: 30px;
+    color: white;
+}
+.container .title-info p span{
+    color: #9E9E9E;
+    margin-left: 7px;
+}
+
+.quiz-area{
+    background-color: #003;
+    text-align: center;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 6px;
+    width: 70%;
+}
+.quiz-area h1{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 40px;
+}
+.quiz-area ul{
+   list-style-type: none;
+   padding: 20px;
+}
+.quiz-area ul li{
+   padding: 20px 0;
+   color: white;
+   cursor: pointer;
+   background-color: #005;
+   margin: 10px 0;
+   border-radius: 8px;
+   border: 2px solid transparent;
+   transition: 0.5s;
+   font-weight: bold;
+}
+.quiz-area button{
+    padding: 9px;
+    background-color: #009;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    color: white;
+    transition: 0.5s;
+}
+.quiz-area button:hover,.quiz-area ul li:hover{
+    background-color: transparent;
+    border: 2px solid white;
+   
+}
+.quiz-area button:active,.quiz-area ul li:active{
+    transform: scale(0.85);
+}
+.swal-button{
+    background-color: #009;
+}
+.swal-button:hover{
+    background-color: #005 !important;
+}
+.data{
+    border-radius: 25px;
+    width: 60%;
+}
+.data input{
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: center;
+}
+.foot{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #003;
+    padding: 15px;
+}
+.foot span{
+    color: red;
+}
+
+@media (max-width:767px){
+    .quiz-area{
+       width: 100%;
+    }
+    .quiz-area h1{
+       font-size: 20px;
+    }
+
+    .container .title-info{
+        display: block;
+        text-align: center;
+    }
+
+    .container .title-info .info{
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .data{
+        border-radius: 15px;
+        width: 90%;
+    }
+}
